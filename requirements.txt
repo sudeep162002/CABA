@@ -1,0 +1,5 @@
+pdfplumber
+google-generativeai
+openpyxl
+rich
+click

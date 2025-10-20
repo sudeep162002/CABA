@@ -1,0 +1,39 @@
+Please use the following instructions to create a JSON object representing a travel trip from the data in the provided PDF text.
+
+The JSON object should have the following structure:
+{
+  "date": "YYYY-MM-DD",
+  "inward_from": "",
+  "inward_to": "",
+  "outward_from": "",
+  "outward_to": "",
+  "visits": 1,
+  "vendor": "",
+  "inward_charges": "",
+  "outward_charges": ""
+}
+
+Instructions:
+
+- Analyze the text for a single trip record.
+- If the trip time is before 1 PM (12-hour clock), fill only the "inward" fields ("inward_from", "inward_to", "inward_charges") and set all "outward" fields ("outward_from", "outward_to", "outward_charges") to an empty string "".
+- If the trip time is 3 PM or later, fill only the "outward" fields and leave the "inward" fields as empty strings "".
+- If any field's information is missing or cannot be determined from the text, set that field to an empty string "".
+- The "visits" field should default to 1 if no other information is available.
+- Ensure the output is a single, valid JSON object. Do not output anything other than the JSON.
+
+Example Entry (for a trip before 1 PM):
+{
+  "date": "2025-06-01",
+  "inward_from": "Home",
+  "inward_to": "Airport",
+  "outward_from": "",
+  "outward_to": "",
+  "visits": 1,
+  "vendor": "Ola",
+  "inward_charges": "530",
+  "outward_charges": ""
+}
+
+Text from PDF:
+[PDF TEXT WILL BE INSERTED HERE]
