@@ -11,25 +11,11 @@ A professional CLI tool for processing PDF cab booking data and generating organ
 - 💾 **Configuration Management**: Save API keys and preferences
 - 🎨 **Professional UI**: Beautiful terminal interface with Rich library
 
-## Installation via Homebrew
-
-### Quick Install
-
-```bash
-# Add the tap
-brew tap sudeep162002/caba
-
-# Install CABA
-brew install caba
-
-# Run the application
-caba
-```
 
 ### Requirements
 
 - macOS with Homebrew installed
-- Python 3.11+ (installed automatically by Homebrew)
+- Python 3.11+ 
 - Google Gemini API key
 
 ### Usage
@@ -53,22 +39,8 @@ caba
    - Generated Excel file with organized cab booking data
    - Summary of processed files
 
-### Update
-
-```bash
-brew upgrade caba
-```
-
-### Uninstall
-
-```bash
-brew uninstall caba
-brew untap sudeep162002/caba
-```
-
 ## Manual Installation
 
-If you prefer not to use Homebrew:
 
 ```bash
 # Clone the repository
@@ -76,7 +48,7 @@ git clone https://github.com/sudeep162002/caba.git
 cd caba
 
 # Install dependencies
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 # Run the application
 python3 caba.py
