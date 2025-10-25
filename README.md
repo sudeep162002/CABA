@@ -22,7 +22,7 @@ A professional CLI tool for processing PDF cab booking data and generating organ
 
 1. **Run CABA**:
    ```bash
-   caba
+   python3 caba.py
    ```
 
 2. **Follow the prompts**:
