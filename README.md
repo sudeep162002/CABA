@@ -20,22 +20,17 @@ A professional CLI tool for processing PDF cab booking data and generating organ
 
 ### Usage
 
-1. **Run CABA**:
-   ```bash
-   caba
-   ```
-
-2. **Follow the prompts**:
+1. **Follow the prompts**:
    - Enter your PDF directory path
    - Provide your Gemini API key (saved for future use)
    - Configure optional settings (Excel template, output file, etc.)
 
-3. **Monitor Progress**:
+2. **Monitor Progress**:
    - Real-time processing progress
    - Percentage completion for each PDF
    - Error handling and warnings
 
-4. **Get Results**:
+3. **Get Results**:
    - Generated Excel file with organized cab booking data
    - Summary of processed files
 
@@ -45,13 +40,13 @@ A professional CLI tool for processing PDF cab booking data and generating organ
 ```bash
 # Clone the repository
 git clone https://github.com/sudeep162002/caba.git
+
 cd caba
 
-# Install dependencies
-pip3 install -r requirements.txt
+chmod +x caba.sh
 
 # Run the application
-python3 caba.py
+./caba.sh
 ```
 
 ## Configuration
