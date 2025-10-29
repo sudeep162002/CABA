@@ -2,6 +2,10 @@
 
 A professional CLI tool for processing PDF cab booking data and generating organized Excel reports using AI-powered text extraction.
 
+<img width="1724" height="807" alt="Screenshot 2025-10-29 at 1 59 46 PM" src="https://github.com/user-attachments/assets/e97d896d-45d4-4d36-85e1-55f52c126c52" />
+
+<img width="1724" height="866" alt="Screenshot 2025-10-29 at 2 04 08 PM" src="https://github.com/user-attachments/assets/f7ed0cfc-af55-4c69-b242-2aba01225869" />
+
 ## Features
 
 - 🚀 **Fast Processing**: Process multiple PDF files efficiently
