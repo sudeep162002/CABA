@@ -320,12 +320,12 @@ def get_user_inputs(config: CabaConfig) -> Dict[str, str]:
     inputs["pdf_dir"] = pdf_dir
     config.set("pdf_dir", pdf_dir)
     
-    default_template = config.get("template_file", "base.xlsx")
-    template_file = Prompt.ask(
-        "[info]Excel template file[/info] [dim](optional)[/dim]",
-        default=default_template,
-        show_default=True
-    )
+    template_file = config.get("template_file", "base.xlsx")
+    # template_file = Prompt.ask(
+    #     "[info]Excel template file[/info] [dim](optional)[/dim]",
+    #     default=default_template,
+    #     show_default=True
+    # )
     
     if template_file and not os.path.isfile(template_file):
         console.print(f"[warning]Template file not found: {template_file}[/warning]")
@@ -335,21 +335,21 @@ def get_user_inputs(config: CabaConfig) -> Dict[str, str]:
     inputs["template"] = template_file
     config.set("template_file", template_file)
     
-    default_output = config.get("output_file", "output.xlsx")
-    output_file = Prompt.ask(
-        "[info]Output Excel file[/info] [dim](optional)[/dim]",
-        default=default_output,
-        show_default=True
-    )
+    output_file = config.get("output_file", "output.xlsx")
+    # output_file = Prompt.ask(
+    #     "[info]Output Excel file[/info] [dim](optional)[/dim]",
+    #     default=default_output,
+    #     show_default=True
+    # )
     inputs["output"] = output_file
     config.set("output_file", output_file)
     
-    default_prompt = config.get("prompt_file", "prompt.txt")
-    prompt_file = Prompt.ask(
-        "[info]Prompt file[/info] [dim](optional)[/dim]",
-        default=default_prompt,
-        show_default=True
-    )
+    prompt_file = config.get("prompt_file", "prompt.txt")
+    # prompt_file = Prompt.ask(
+    #     "[info]Prompt file[/info] [dim](optional)[/dim]",
+    #     default=default_prompt,
+    #     show_default=True
+    # )
     
     if prompt_file and not os.path.isfile(prompt_file):
         console.print(f"[warning]Prompt file not found: {prompt_file}[/warning]")
